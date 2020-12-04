@@ -19,7 +19,8 @@
             android:id="@+id/face_detection_camera_image_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:scaleType="centerCrop" />
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/todo" />
 
         <Button
             android:id="@+id/face_detection_camera_toggle_button"
@@ -27,7 +28,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="top|end"
             android:layout_margin="8dp"
-            android:text="toggle" />
+            android:text="@string/toggle" />
     </FrameLayout>
 
     <ImageView
@@ -42,5 +43,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/todo1" />
 </androidx.constraintlayout.widget.ConstraintLayout>
