@@ -20,7 +20,7 @@
     <FrameLayout
         android:id="@+id/bottom_sheet_button"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
+        android:layout_height="58dp"
         android:layout_margin="8dp"
         android:background="@drawable/rounded_corners">
 
@@ -29,6 +29,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:contentDescription="@string/todo2"
             android:src="@android:drawable/ic_menu_camera" />
 
         <ProgressBar

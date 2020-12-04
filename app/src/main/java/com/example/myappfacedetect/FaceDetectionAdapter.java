@@ -9,6 +9,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.text.MessageFormat;
 import java.util.List;
 
 public class FaceDetectionAdapter extends RecyclerView.Adapter<FaceDetectionAdapter.ViewHolder> {
@@ -33,7 +34,11 @@ public class FaceDetectionAdapter extends RecyclerView.Adapter<FaceDetectionAdap
     @Override
     public void onBindViewHolder(@NonNull FaceDetectionAdapter.ViewHolder holder, int position) {
 
-        FaceDetectionModel faceDetectionModel;
+        FaceDetectionModel faceDetectionModel = faceDetectionModelList.get(position);
+
+        holder.text1.setText(MessageFormat.format("Face: {0}", String.valueOf(faceDetectionModel.getId())));
+        holder.text2.setText(MessageFormat.format("Face: {0}", faceDetectionModel.getText()));
+
 
     }
 
